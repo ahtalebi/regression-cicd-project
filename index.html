@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Default Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .plot {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Credit Card Default Prediction</h1>
+    <h2>Model Performance Dashboard</h2>
+    
+    <div class="plot">
+        <h3>Overall Performance</h3>
+        <img src="plots/model_performance.png" alt="Model Performance">
+    </div>
+    
+    <div class="plot">
+        <h3>ROC Curve</h3>
+        <img src="plots/roc_curve.png" alt="ROC Curve">
+    </div>
+    
+    <div class="plot">
+        <h3>Confusion Matrix</h3>
+        <img src="plots/confusion_matrix.png" alt="Confusion Matrix">
+    </div>
+    
+    <footer style="text-align: center; margin-top: 40px; color: #666;">
+        <p>Automatically updated by CI/CD pipeline</p>
+        <p>Last updated: <span id="date"></span></p>
+        <script>
+            document.getElementById('date').textContent = new Date().toLocaleString();
+        </script>
+    </footer>
+</body>
+</html>
