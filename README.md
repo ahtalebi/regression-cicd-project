@@ -40,3 +40,4 @@ Expected performance:
 Push to GitHub and watch Actions run automatically!
 
 
+## 🚀 Automated CI/CD Pipeline
